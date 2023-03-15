@@ -15,9 +15,9 @@ string hodnota = Console.ReadLine();
 if (hodnota == "minimum")
 {
     int min = poleTeplot[0];
-    foreach (int i in poleTeplot)
+    foreach (int cislo in poleTeplot)
     {
-        min = Math.Min(min, poleTeplot[i]);
+        min = Math.Min(min, cislo);
     }
     Console.WriteLine(min); // Tady program vypíše minimální hodnotu.
 }
@@ -27,7 +27,7 @@ else if (hodnota == "maximum")
     int max = poleTeplot[0];
     foreach (int i in poleTeplot)
     {
-        max = Math.Max(max, poleTeplot[i]);
+        max = Math.Max(max, i);
     }
     Console.WriteLine(max); // Tady maximální hodnotu.
 }
